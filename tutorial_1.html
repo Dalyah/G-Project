@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>DeepGaze Tutorial</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/font-awesome.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/templatemo-style.css">
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <div class="responsive-header visible-xs visible-sm">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="top-section">
+                            <div class="profile-image">
+                                <img src="img/profile.jpg" alt="Dalyah">
+                            </div>
+                            <div class="profile-content">
+                                <h3 class="profile-title">Dalyah</h3>
+                                <p class="profile-description">Computer Engineer</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="toggle-menu"><i class="fa fa-bars"></i></a>
+                <div class="main-navigation responsive-menu">
+                    <ul class="navigation">
+                        <li><a href="main.html#top"><i class="fa fa-home"></i>Home</a></li>
+                        <li><a href="main.html #about"><i class="fa fa-user"></i>About Me</a></li>
+                        <li><a href="main.html#projects"><i class="fa fa-newspaper-o"></i>Tutorials</a></li>
+                        <li><a href="main.html#contact"><i class="fa fa-envelope"></i>Contact Me</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- SIDEBAR -->
+        <div class="sidebar-menu hidden-xs hidden-sm">
+            <div class="top-section">
+                <div class="profile-image">
+                    <img src="img/profile.jpg" alt="Dalyah">
+                </div>
+                <h3 class="profile-title">Dalyah</h3>
+                <p class="profile-description">Computer Engineer</p>
+            </div> <!-- top-section -->
+
+            <div class="main-navigation">
+                <ul >
+                    <li><a href="tutorial_1.html#top"><i class="fa fa-globe"></i>Welcome</a></li>
+                    <li><a href="tutorial_1.html#about"><i class="fa fa-pencil"></i>About Me</a></li>
+                    <li><a href="main.html#projects"><i class="fa fa-paperclip"></i>Tutorials</a></li>
+                    <li><a href="main.html#contact"><i class="fa fa-link"></i>Contact Me</a></li>
+                </ul>
+            </div> <!-- .main-navigation -->
+            <div class="social-icons">
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/dalyah-aljamal/"><i class="fa fa-linkedin"></i></a></li>
+                    <li><a href="https://github.com/Dalyah"><i class="fa fa-github"></i></a></li>
+                    <!--<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                    <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                    <li><a href="#"><i class="fa fa-rss"></i></a></li> -->
+                </ul>
+            </div> <!-- .social-icons -->
+        </div> <!-- .sidebar-menu -->
+
+
+        <div class="banner-bg-tutorial" id="top" >
+            <div class="banner-overlay"></div>
+            <div class="welcome-text">
+                <h2>Deepgaze Head pose Estimator Model Tutorial</h2>
+                <br/>
+                </br/>
+                <!-- <h6 style="color:white;">Patacchiola, M., & Cangelosi, A. (2017). Head pose estimation in the wild using
+                    Convolutional Neural Networks and adaptive gradient methods. Pattern Recognition,
+                     http://dx.doi.org/10.1016/j.patcog.2017.06.009.</h6> -->
+            </div>
+        </div>
+
+        <!-- MAIN CONTENT for the tutorial -->
+        <div class="main-content">
+            <div class="fluid-container">
+
+                <div class="content-wrapper">
+
+                    <!-- Section 1 -->
+                    <div class="page-section" id="about">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h4 class="widget-title">Abstract Tutorial</h4>
+                            <p>If you ever wanted to add head pose estimation feature to your application.
+                                You would like to use a reliable trained model to estimate the head poses of a set of images.
+                                This tutorial is prepared for you. I will present detailed steps on how to load and use the
+                                Deepgaze head pose estimator model.</p>
+                            <br/></br/>
+                            <h4 class="widget-title">Model Constraints</h4>
+                            <p>The head pose estimator model from deepgaze has the following constraints: </p>
+                                <ul>
+                                    <li>    1. The images passed to the model should be colored images (having three channels).</li>
+                                    <li>    2. The images passed to the model should be of size 64× 64 pixels or higher.</li>
+                                </ul>
+                                <br/></br/>
+                                <h4 class="widget-title">Installation and Prerequisites</h4>
+                                <p>To have the head pose estimator model working on your machine, you must install: </p>
+                                <ul>
+                                    <li> 1.	Install Python. </li>
+                                    <li> 2.	Install Pip. </li>
+                                    <li> 3. Install Numpy.</li>
+                                    <li> 4.	Install OpenCV 2.0.</li>
+                                </ul>
+                                <br/>
+                                <p>
+                                    For training and model enhancing purposes, you need to install the following:
+                                    <br/>1.	TensorFlow
+                                </p>
+                                <br/></br/>
+                                <h4 class="widget-title">Guide through the Model</h4>
+                                <p>Now, after you have all the necessary packages installed.</p>
+                                <ul>
+                                    <li> 1.	Go to the <a href="https://github.com/mpatacchiola/deepgaze">Deepgaze GitHub repository</a>. </li>
+                                    <li> 2.	Clone or download the following files:
+                                        <ol>
+                                            <li> a.	Deepgaze/deepgaze/cnn_head_pose_estimation.py</li>
+                                            <li>b.	Deepgaze/etc/ternsorflow/head_pose/ALL THE FILES</li>
+                                            <li>c.	Deepgaze/examples/ex_cnn_head_pose_estimation_images/ALL THE FILES</li>
+                                        </ol>
+                                     </li>
+                                </ul>
+                                <br/>
+                                <p>
+                                    The cnn_head_pose_estimation.py file contains the head pose estimator model, that you will be using to
+                                    predict head poses of your different images, under CnnHeadPoseEstimator class. All the pretrained model
+                                    files that are used in above model are stored in <i>Deepgaze/etc/ternsorflow/head_pose directory. ex_cnn_head_pose_estimation_images.py </i>
+                                    under <i>Deepgaze/examples/ex_cnn_head_pose_estimation_images</i>
+                                     directory provides you with the way to use the head pose estimator model to predict sample images in the same directory.
+                                </p>
+                            <hr>
+                        </div>
+                    </div> <!-- section 1 -->
+
+
+                    <!-- Section 2 -->
+                    <div class="page-section" id="projects">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <!-- Detailed Tutorial -->
+
+                            <h4 class="widget-title">Detailed Tutorial</h4>
+                            <h4 class="widget-title">Head Pose Estimation</h4>
+                            <p>In the last few years, many improvements and advancements occur in Augmented Reality and Virtual Reality.
+                                 Head Pose Estimation is an important part of that enhancements.
+                                  Head pose estimation means predicting the pose of the human head;
+                                  it is estimating if the person is looking upwards, downwards, right or left. Precisely,
+                                   a good head pose estimator can estimate accurate roll, pitch and yaw angles of the face.
+                                   This is useful for player navigation through a VR application or smart pdf reader application.</p>
+                            <br/></br/>
+                            <h4 class="widget-title">Convolutional Neural Network</h4>
+                            <p>Artificial Neural Networks (NN) are meant to imitate the behavior of the human neural networks.
+                                 Convolution Neural Networks (CNN) is one type of NN that uses special mathematical operation: Convolution.
+                                 CNN are used to deal with image related problems like image classification and head pose estimation.
+                                 CNN has two main parts: feature extraction where convolution layers are used and classification part where the fully connected layers are responsible.
+                                 Convolutional layers use filters(masks) that pass over the input images to merge their values with the filter values and produce feature maps.
+                                 Those feature maps are then passed to the fully connected layers to do the classification and produce the prediction as an output layer. </p>
+                                 <br/></br/>
+                                 <div class="about-image">
+                                     <img src="img/cnn.jpg" alt="about me">
+                                 </div>
+                        <br/><br />
+                        <h4 class="widget-title">TensorFlow</h4>
+                        <p>In this tutorial, we are going to use TensorFlow software library to understand and enhance deepgaze model.
+                             TensorFlow is an open source software library that provides high performance numerical computations.
+                             It is suitable to implement machine learning and deep learning models.
+                            It runs on many platforms (CPUs, GPUs, TPUs).</p>
+                            <br/><br />
+                            <h4 class="widget-title">Deepgaze</h4>
+                            <p>Deepgaze is a Human Computer Interaction library that includes useful models for head pose estimation, face detection, color and skin detection, motion tracking, motion detection, Histogram-based classification and saliency maps. The main focus of this project is the deepgze head pose estimation model.
+                                 In fact, deepgaze has two head pose estimator; one using CNN and another using Perspective-n-Point (PNP). This tutorial uses the CNN head Pose Estimator.
+                                The CNN head pose estimator model was constructed from two CNNs of type B as shown in the figure below.
+                                 Different CNN architectures were tested before to choose this architecture as the most accurate and robust model. </p>
+                            <img src="img/arch.jpg" alt="about me" align="middle">
+                               <p>The model was trained on Annotated Facial Landmarks in the Wild (AFLW) dataset. AFLW consists of 25k coloured real-world face images gathered from the web. The images are various and captured in different conditions.
+                                The dataset includes female and male face images and different face poses from a variety of ages. The images are labelled with 21 landmarks per image.
+                                The mean Absolute error (MAE) and the Standard Deviation (STD) were the metrics used to test the accuracy of the head pose estimator model.
+                                The same metrics were also used to test the model across other datasets later in this project.</p>
+                        </div>
+                    </div>
+                </div> <!-- Section2 -->
+
+                    <hr>
+                    <!-- Section 3 -->
+                    <div class="page-section" id="contact">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h4 class="widget-title">Testing Deepgaze Head Pose Estimator</h4>
+                            <p>After successfully installing the model and have it running, it is the time to test the model with external images and different datasets.
+                                 For that purpose, with the help of deepgaze packages I wrote two testing scripts. You can access the scripts through <a href="https://github.com/Dalyah/GP">my GitHub repository</a>
+The first script allows the user to estimate the Head Pose angles (Yaw, Pitch and Roll) of any image. The image should be pre-proceeded before passing it to the estimator.
+ The image should be colored, of 64*64 or higher, and contains the face only.
+  For that, image cropping and resizing is performed first, then the resulted image is passed to the head pose estimator to end up with the Yaw, Pitch and Roll predictions.
+  Finally, the results are visualized with lines drawn on the face.
+The second script is for testing the deepgaze CNN head Pose Estimator on different datasets. For this tutorial, I used <a href="http://www-prima.inrialpes.fr/perso/Gourier/Faces/HPDatabase.html">Prima Dataset</a>
+to evaluate the model.
+I used <i>ex_prima_parser.py</i> deepgaze package to parse, crop and prepare the ground truth labels for testing.
+After that, I passed the dataset images to the head pose estimator and compare the prediction results with the ground truth labels. The mean Absolute Error was the accuracy metric used for the evaluation.
+</p>
+<p>More details and examples about the testing script are avaliable in my GitHub</p>
+                        </div>
+                    </div>
+
+                </div> <!-- #Section3-->
+                    <hr>
+                    <!-- Section 4 -->
+                    <div class="page-section" id="contact">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h4 class="widget-title">DeepGaze library Credit</h4>
+                            <h6 >Patacchiola, M., & Cangelosi, A. (2017). Head pose estimation in the wild using
+                                Convolutional Neural Networks and adaptive gradient methods. Pattern Recognition,
+                                 http://dx.doi.org/10.1016/j.patcog.2017.06.009.</h6>
+                        </div>
+                    </div>
+
+                </div> <!-- #Section4-->
+                    <div class="row" id="footer">
+                        <div class="col-md-12 text-center">
+                            <p class="copyright-text">Copyright &copy; 2018 Eng.Dalyah</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+        <script src="js/vendor/jquery-1.10.2.min.js"></script>
+        <script src="js/min/plugins.min.js"></script>
+        <script src="js/min/main.min.js"></script>
+
+    </body>
+</html>
