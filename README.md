@@ -7,5 +7,7 @@ You will also find how to prepare Prima_dataset[3] for trining and testing using
 
 # Credits
 [1]	Patacchiola, M., & Cangelosi, A. (2017). Head pose estimation in the wild using Convolutional Neural Networks and adaptive gradient methods. Pattern Recognition, http://dx.doi.org/10.1016/j.patcog.2017.06.009.
+
 [2] Annotated Facial Landmarks in the Wild (AFLW). (n.d.). Retrieved from https://www.tugraz.at/institute/icg/research/team-bischof/lrs/downloads/aflw/
+
 [3]	Gourier, N. (n.d.). Retrieved from http://www-prima.inrialpes.fr/perso/Gourier/Faces/HPDatabase.html
